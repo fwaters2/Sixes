@@ -7,18 +7,16 @@
 }
 
 .Home-Background {
-  background-image: url(../../Assets/Images/tourneyphoto.jpg);
-height: 100%;
-  background-size: auto 200%;
-  animation: photo-pan infinite 40s linear alternate;
+  position:fixed;
+  left:-80%;
+height: 100vh;
+z-index: -1;
+  
 }
-@keyframes photo-pan {
-  from {
-    background-position: 0 -340px;
-  }
-  to {
-    background-position: 100% -340px;
-  }
+.Background-Video{
+  z-index: 2;
+  height: 100%;
+ 
 }
 .Home img {
   width: 50vw;

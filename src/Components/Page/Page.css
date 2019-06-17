@@ -1,0 +1,16 @@
+.PageContainer{
+    color: black
+}
+.PageTitle{
+    font-size: 24pt;
+    background-color:lightblue
+}
+.BodyIntro{
+    background-color:salmon;
+    margin: 10px;
+    min-height: 73vh;
+}
+.PageItem{
+    background-color:lightgreen;
+    margin: 10px
+}

@@ -1,0 +1,36 @@
+.App {
+  text-align: center;
+  background-color: white;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+.Header {
+  position: fixed;
+  top: 0px;
+  height: 9vh;
+  background-color: rgb(229,5,3);
+  width: 100%;
+  z-index: 1;
+  
+}
+.Body {
+  background-color: rgba(255,247,1,0.6);
+  height:84vh;
+  position: absolute;
+  top: 9vh;
+  width: 100%;
+  color:black;
+}
+
+.Footer {
+  position: fixed;
+  height: 5vh;
+    bottom: 0px;
+    background-color: rgb(229,5,3);
+    width: 100%;
+}

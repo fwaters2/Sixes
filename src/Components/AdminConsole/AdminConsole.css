@@ -1,0 +1,50 @@
+.Admin-Container{
+    background-color: lightblue;
+    height:100%;
+    margin:5px;
+}
+.Admin-Title{
+    background-color:lightcoral;
+    margin: 5px;
+}
+.Admin-Items{
+    display:flex;
+    flex-direction:column;
+    background-color:lightgreen;
+    margin: 5px;
+}
+.Admin-Item{
+    background-color: lightyellow;
+    margin: 5px;
+}
+.Updates{
+    background-color:peru;
+    margin:5px;
+    min-height:300px;
+}
+.Updates Form{
+    background-color:orangered;
+    margin: 5px;
+    min-height:200px;
+    display:flex;
+    flex-direction: column;
+}
+.Updates-Title{
+    background-color:lightcoral;
+    margin:5px;
+}
+.Updates-Subject{
+    background-color:lightgreen;
+    margin:5px;
+    display:flex;
+    flex-direction:column;
+}
+.Updates-Text{
+    background-color:lightblue;
+    margin: 5px;
+    display:flex;
+    flex-direction:column;
+}
+textarea{
+    min-height:125px;
+}

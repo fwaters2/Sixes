@@ -1,0 +1,19 @@
+.AdminLogin{
+    background-color:pink;
+   
+    width: 70%;
+    top:9vh;
+    right:0;
+    position: absolute;
+    z-index: 2;
+}
+.AdminLogin form{
+    display:flex;
+    background-color:lightblue;
+    margin:5px;
+}
+.AdminLogin input {
+    width: 90%;
+    padding: 5px;
+    margin: 5px;
+}

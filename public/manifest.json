@@ -38,7 +38,8 @@
    "density": "4.0"
   }
  ],
- "start_url": ".",
+ 
  "display": "standalone",
+ "background_color": "rgb(255,247,1)",
  "orientation": "portrait"
 }

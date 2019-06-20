@@ -1,4 +1,5 @@
 .Home {
+  position: fixed;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -8,24 +9,19 @@
 }
 .Home-Background {
   position: fixed;
-  height: 100vh;
-  z-index: -1;
-}
-.Background-Video {
-  z-index: 2;
-  height: 100%;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -2;
 }
 .CartLogo img{
   position: fixed;
   width:10vw;
   right: 2vw;
-  bottom: 9vh;
-  
+  bottom: 9vh; 
 }
 .Home img {
-  position: absolute;
+  position: fixed;
   animation: logo-popin-out 5s forwards;
- 
 }
 .Countdown {
   width: 60%;
@@ -45,7 +41,6 @@
 .Home button {
   padding: 15px;
   width: 70vw;
-
   border-radius: 20px;
   margin: 10px;
   font-size: 18pt;
@@ -53,11 +48,10 @@
 @keyframes logo-popin-out {
   from {
     top: 30%;
-    left: 50%;
-    width: 0;
-    
+    left:50%;
+    transform: translate(-50%);
+    width: 15vw;   
   }
- 
   40% {
       top:50%;
       left: 50%;
@@ -65,9 +59,8 @@
       transform: translate(-50%, -50%)
   }
   to {
-    top: 2%;
+    top: 10%;
     left: 2%;
     width: 15vw;
-    
   }
 }

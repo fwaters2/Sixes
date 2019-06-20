@@ -1,9 +1,0 @@
-Sixes Webapp
-
-Goals:
--Register Players
--admin can create and control content
--players can view information from admin
-
-Step 1:
--Connect registration to sheets api

@@ -16,7 +16,13 @@ class Home extends Component {
   render() {
     return (
       <div
-        style={{ display: "flex", justifyContent: "center", height: "100%", width: "100%"}}
+        style={{
+          position:"fixed",
+          display: "flex",
+          justifyContent: "center",
+          height: "100%",
+          width: "100%"
+        }}
       >
         <video className="Home-Background" autoPlay loop muted>
           <source src={vid} type="video/mp4" />

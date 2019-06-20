@@ -17,7 +17,7 @@ class Home extends Component {
     return (
       <div
         style={{
-          position:"fixed",
+          position: "fixed",
           display: "flex",
           justifyContent: "center",
           height: "100%",
@@ -32,20 +32,12 @@ class Home extends Component {
         </div>
         <div className="Home">
           <img src={logo} alt="Sixes Logo" />
-          <div
-            style={{
-              display: "fixed",
-              height: "100%",
-              width: "100%",
-              marginTop: "60vh"
-            }}
-          >
-            <div className="Countdown">
-              <label>Registration opens:</label>
-              <Countdown />
-            </div>
-            <button disabled>Register Now!</button>
+
+          <div className="Countdown position">
+            <label>Registration opens:</label>
+            <Countdown />
           </div>
+          <button className="position" disabled>Register Now!</button>
         </div>
       </div>
     );

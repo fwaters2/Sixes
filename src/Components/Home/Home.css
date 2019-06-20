@@ -1,8 +1,5 @@
 .Home {
   position: fixed;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   height: 100%;
   justify-content: space-between;
   width: 100vw;
@@ -23,26 +20,29 @@
   position: fixed;
   animation: logo-popin-out 5s forwards;
 }
+.position {
+  position: fixed;
+  top: 70%;
+  width: 50%;
+  left: 25%;
+  height: 60px;
+}
 .Countdown {
-  width: 60%;
-  margin: auto;
+  display: fixed;
   color: rgb(229, 5, 3);
   font-weight: bold;
   font-size: 14pt;
   background-color: rgba(0, 0, 0, 0.7);
-  padding: 5px 15px;
-  border-radius: 15px;
+  border-radius: 20px;
+  z-index: 1;
 }
 .Countdown label {
   font-size: 14pt;
-  padding: 0;
   border-bottom: 2px solid white;
 }
 .Home button {
-  padding: 15px;
-  width: 70vw;
+  display: fixed;
   border-radius: 20px;
-  margin: 10px;
   font-size: 18pt;
 }
 @keyframes logo-popin-out {

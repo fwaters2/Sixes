@@ -26,28 +26,29 @@ class Countdown extends Component {
   tick() {
     const regSecs = Date.parse(new Date(this.state.regDate));
     const time = (regSecs - Date.parse(new Date()));
-    const seconds = Math.floor(time/1000)%10
-    const secondsTens = Math.floor(time/10000)%6
-    const minutes = Math.floor(time/60000)%10
-    const minutesTens = Math.floor(time/600000)%6
-    const hours = Math.floor(time / 60 / 60 / 1000) % 10
-    const hoursTens = Math.floor(time / 60 / 60 / 1000) % 3
-    const days = Math.floor(time / 1000 / 60 / 60 / 24)
+    const seconds = time/1000
+    const secondsOnes = seconds%10
+    const secondsTens = Math.floor(seconds / 10)%6
+    const minutesOnes = Math.floor(seconds / 60)%10
+    const minutesTens = Math.floor(seconds / 60 /10)%6
+    const hoursOnes = Math.floor(seconds /60 /60)%10
+    const hoursTens = Math.floor(seconds / 60 / 60) % 3
+    const days = Math.floor(seconds / 60 / 60 / 24)
     this.setState({
       days: days,
       hoursTens: hoursTens,
-      hour: hours,
+      hour: hoursOnes,
       minutesTens: minutesTens,
-      minutes: minutes,
+      minutes: minutesOnes,
       secondsTens: secondsTens,
-      seconds: seconds
+      seconds: secondsOnes
     });
   }
 
   render() {
     return (
       <div>
-        {this.state.days} days, {this.state.hoursTens}{this.state.hours}:{this.state.minutesTens}
+        {this.state.days} days, {this.state.hoursTens}{this.state.hour}:{this.state.minutesTens}
         {this.state.minutes}.{this.state.secondsTens}
         {this.state.seconds}
       </div>

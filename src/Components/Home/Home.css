@@ -4,43 +4,70 @@
   align-items: center;
   height: 100%;
   justify-content: space-between;
+  width: 100vw;
 }
-
 .Home-Background {
-  position:fixed;
-  left:-80%;
-height: 100vh;
-z-index: -1;
-  
+  position: fixed;
+  height: 100vh;
+  z-index: -1;
 }
-.Background-Video{
+.Background-Video {
   z-index: 2;
   height: 100%;
- 
+}
+.CartLogo img{
+  position: fixed;
+  width:10vw;
+  right: 2vw;
+  bottom: 9vh;
+  
 }
 .Home img {
-  width: 50vw;
-  max-width: 300px;
-  margin: 5vh;
+  position: absolute;
+  animation: logo-popin-out 5s forwards;
+ 
 }
 .Countdown {
+  width: 60%;
+  margin: auto;
   color: rgb(229, 5, 3);
   font-weight: bold;
   font-size: 14pt;
-  background-color: rgba(0,0,0,0.7);
+  background-color: rgba(0, 0, 0, 0.7);
   padding: 5px 15px;
   border-radius: 15px;
 }
-.Countdown Label{
+.Countdown label {
   font-size: 14pt;
   padding: 0;
-  border-bottom: 2px solid white
+  border-bottom: 2px solid white;
 }
 .Home button {
   padding: 15px;
-  width: 80vw;
+  width: 70vw;
 
   border-radius: 20px;
   margin: 10px;
   font-size: 18pt;
+}
+@keyframes logo-popin-out {
+  from {
+    top: 30%;
+    left: 50%;
+    width: 0;
+    
+  }
+ 
+  40% {
+      top:50%;
+      left: 50%;
+      width:60vw;
+      transform: translate(-50%, -50%)
+  }
+  to {
+    top: 2%;
+    left: 2%;
+    width: 15vw;
+    
+  }
 }

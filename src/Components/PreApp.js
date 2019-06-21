@@ -1,7 +1,7 @@
 import React,{ Component, Suspense} from 'react'
 import Preloader from './Preloader/Preloader'
-
-const App = React.lazy(() => import('./App/App'))
+import App from './App/App'
+//const App = React.lazy(() => import('./App/App'))
 
 
 
@@ -13,7 +13,7 @@ class PreApp extends Component{
         }
     }
     componentDidMount(){
-        setInterval(this.loadPage, 5000)
+        setInterval(this.loadPage, 10000)
       }
       loadPage = e => {
         this.setState({
@@ -24,10 +24,10 @@ class PreApp extends Component{
     render(){
       
         return(
-          <Suspense fallback={Preloader}>
-            <App />
-          </Suspense>
-        //this.state.notReady ? <Preloader /> : <App />
+          //<Suspense fallback={Preloader}>
+            //<App />
+          //</Suspense>
+        this.state.notReady ? <Preloader /> : <App />
         )
     }
 }

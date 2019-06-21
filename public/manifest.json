@@ -40,6 +40,6 @@
  ],
  
  "display": "standalone",
- "background_color": "rgb(255,247,1)",
+ "background_color": "#fff701",
  "orientation": "portrait"
 }

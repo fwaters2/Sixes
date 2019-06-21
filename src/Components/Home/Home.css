@@ -1,7 +1,6 @@
 .Home {
   position: fixed;
   height: 100%;
-  justify-content: space-between;
   width: 100vw;
 }
 .Home-Background {
@@ -29,6 +28,7 @@
 }
 .Countdown {
   display: fixed;
+  
   color: rgb(229, 5, 3);
   font-weight: bold;
   font-size: 14pt;

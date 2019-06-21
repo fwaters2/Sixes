@@ -57,7 +57,12 @@ const PageInfo=
       "bodyIntro": "Most recent updates at the top",
       "items": [
         "First update"
-      ]}
+      ]},
+      {
+      "title":"RegIframe",
+      "bodyIntro": "Here is where we can put the google form",
+      "items":"" //embed googledoc see googlemap
+      } 
 ]
  
 

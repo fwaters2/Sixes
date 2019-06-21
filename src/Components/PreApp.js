@@ -1,6 +1,9 @@
-import React, { Component } from 'react'
-import Preloader from './Preloader/Preloader';
-import App from './App/App'
+import React,{ Component, Suspense} from 'react'
+import Preloader from './Preloader/Preloader'
+
+const App = React.lazy(() => import('./App/App'))
+
+
 
 class PreApp extends Component{
     constructor(props){
@@ -19,8 +22,12 @@ class PreApp extends Component{
         
       }
     render(){
+      
         return(
-        this.state.notReady ? <Preloader /> : <App />
+          <Suspense fallback={Preloader}>
+            <App />
+          </Suspense>
+        //this.state.notReady ? <Preloader /> : <App />
         )
     }
 }

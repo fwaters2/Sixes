@@ -11,7 +11,10 @@ class Home extends Component {
     this.state = {};
   }
   handleClick = e => {
+    
     this.props.appState.handleChange(e.target.id);
+    console.log("hello?")
+    console.log(e.target)
   };
   render() {
     return (
@@ -33,11 +36,12 @@ class Home extends Component {
         <div className="Home">
           <img src={logo} alt="Sixes Logo" />
 
-          <div className="Countdown position" onClick={this.handleClick} id="RegIframe">
-            <label>Registration opens:</label>
-            <Countdown />
-          </div>
-          <button className="position" disabled>Register Now!</button>    
+          <button id="Register" className="Countdown position" onClick={this.handleClick}>
+            <label id="Register">Registration opens:</label>
+            <Countdown id="Register" />
+          </button>
+          <button className="position" disabled>Register Now!</button>  
+            
         </div>
         
       </div>

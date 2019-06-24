@@ -1,7 +1,14 @@
+@media (max-width: 1300px){
 .Navigation {
   display: flex;
   height: 100%;
   justify-content: space-between;
+}
+.dropdown {
+ display: inline;
+}
+.Desktop-Menu{
+  display: none
 }
 .icons {
   height: 100%;
@@ -14,3 +21,53 @@
   height: 9vh;
   margin: 0;
 }
+
+}
+@media (min-width: 1301px){
+  .Navigation {
+    display: flex;
+    height: 100%;
+    justify-content: space-between;
+  }
+  .dropdown {
+    display: none;
+  }
+  .Desktop-Menu{
+    
+    min-width: 1000px;
+
+  }
+  .Desktop-Container{
+    color:black;
+    height:100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: calc(10px + 1vmin);
+   
+  }
+  .Desktop-Item{
+    background-color: rgba(248,248,248,0.3);
+   cursor: pointer;
+border-radius: 10px;
+padding: 5px 10px;
+  }
+  .Desktop-Item:hover{
+    background-color: rgb(255,247,1);
+  }
+  .icons {
+    height: 100%;
+  }
+  .icons img {
+    height: 100%;
+    margin: 0px 10px;
+  }
+  .Title img {
+    height: 7vh;
+    padding: 1vh;
+    margin: auto;
+  }
+  
+  }
+  

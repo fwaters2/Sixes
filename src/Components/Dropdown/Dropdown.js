@@ -5,6 +5,7 @@ import PageInfo from "../Page/PageInfo";
 class Dropdown extends Component {
   handleClick = e => {
     this.props.appState.handleChange(e.target.id);
+    console.log(e.target.id)
     this.props.appState.handleDrawer();
   };
   render() {

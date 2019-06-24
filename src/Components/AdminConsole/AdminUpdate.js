@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Firestore from "./../../Utils/Firebase";
+
 
 class AdminUpdate extends Component {
   constructor(props) {
@@ -17,9 +17,6 @@ class AdminUpdate extends Component {
   };
   handleSubmit = e => {
     e.preventDefault();
-    const db = Firestore.firestore();
-    db.collection("Updates").add(this.state);
-    this.props.appState.handleChange("Updates")
   };
   render() {
     return (

@@ -24,6 +24,7 @@ function Preloader() {
         <div className="Stick Appendage Left Leg Color" />
         <div className="Stick Appendage Right Leg Color" />
       </div>
+      
     </div>
   );
 }

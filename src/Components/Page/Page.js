@@ -9,6 +9,7 @@ class Page extends Component {
     );
     const page = PageInfo[index];
     return (
+      
       <div className="PageContainer">
         <div className="PageTitle">
           {page.title}
@@ -19,7 +20,8 @@ class Page extends Component {
             <div className="PageItem">{x}</div>
           ))}
         </div>
-      </div>
+        </div>
+      
     );
   }
 }

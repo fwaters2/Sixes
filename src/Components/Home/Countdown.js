@@ -31,8 +31,8 @@ class Countdown extends Component {
     const secondsTens = Math.floor(seconds / 10)%6
     const minutesOnes = Math.floor(seconds / 60)%10
     const minutesTens = Math.floor(seconds / 60 /10)%6
-    const hoursOnes = Math.floor(seconds /60 /60)%10
-    const hoursTens = Math.floor(seconds / 60 / 60) % 3
+    const hoursOnes = (Math.floor(seconds /60 /60 ) %24) % 10
+    const hoursTens = (Math.floor(seconds / 60 / 60 ) %24) %3
     const days = Math.floor(seconds / 60 / 60 / 24)
     this.setState({
       days: days,

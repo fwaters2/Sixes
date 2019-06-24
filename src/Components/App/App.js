@@ -35,15 +35,17 @@ function App() {
   };
   return (
     <div className="App">
+      
       <div className="Header">
         <Header appState={appState} />
       </div>
       {drawer ? <Dropdown appState={appState} /> : <div />}
       {adminLogin ? <AdminLogin appState={appState} /> : <div />}
-      <div className="Body">
+      <div className="App-Body">
+        
         <Router appState={appState} />
       </div>
-      <div className="Footer">
+      <div className="App-Footer">
         <Footer />
       </div>
     </div>

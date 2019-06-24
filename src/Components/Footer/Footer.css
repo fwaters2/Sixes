@@ -1,11 +1,12 @@
 
-.Footer {
+.Footer-Container {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     padding: 1vh;
   }
 
-.Footer img {
+.Footer-Container img {
 
     height: 5vh;
     margin: 0px,15px;

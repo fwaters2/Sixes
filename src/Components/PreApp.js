@@ -10,7 +10,7 @@ class PreApp extends Component {
     };
   }
   componentDidMount() {
-    setInterval(this.loadPage, 1000);
+    setInterval(this.loadPage, 3000);
   }
   loadPage = e => {
     this.setState({

@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-
+var myVar;
 
 
 class Countdown extends Component {
@@ -13,15 +13,17 @@ class Countdown extends Component {
       minutesTens: 0,
       minutes: 0,
       secondsTens: 0,
-      seconds: 0
+      seconds: 0,
+     countdown: null
     };
   }
 
-  componentDidMount() {
-    setInterval(() => this.tick(), 1000);
+  componentDidMount=()=> {
+    
+    myVar = setInterval(() => this.tick(), 1000);
   }
   componentWillUnmount(){
-    clearInterval()
+    clearInterval(myVar)
   }
   tick() {
     const regSecs = Date.parse(new Date(this.state.regDate));

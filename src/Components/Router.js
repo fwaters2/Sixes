@@ -1,9 +1,7 @@
 import React, { Component } from "react";
 import Home from "./Home/Home";
 import Page from "./Page/Page.js";
-import AdminConsole from './AdminConsole/AdminConsole'
-import FBfeed from "./Page/FacebookFeed";
-
+import AdminConsole from "./AdminConsole/AdminConsole";
 
 class Router extends Component {
   render() {
@@ -12,8 +10,6 @@ class Router extends Component {
         return <Home appState={this.props.appState} />;
       case "adminConsole":
         return <AdminConsole appState={this.props.appState} />;
-     
-        
       default:
         return <Page appState={this.props.appState} />;
     }

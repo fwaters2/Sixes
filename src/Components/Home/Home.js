@@ -40,7 +40,7 @@ class Home extends Component {
             <label id="Register">Registration opens:</label>
             <Countdown id="Register" />
           </button>
-          <button className="position" disabled>Register Now!</button>  
+          <button className="position dev-state" disabled>Register Now!</button>  
             
         </div>
         

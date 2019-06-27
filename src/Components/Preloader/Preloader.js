@@ -1,11 +1,11 @@
 import React from "react";
-import logo from '../../Assets/Images/logo.png'
+import logo from "../../Assets/Images/logo.png";
 import "./Preloader.css";
 
 function Preloader() {
   return (
     <div className="Container">
-      <img src={logo} alt="logo"/>
+      <img src={logo} alt="logo" />
       <div className="Container-Text">Loading...</div>
       <div className="Container-StickFig">
         <div className="Head Color" />
@@ -24,7 +24,6 @@ function Preloader() {
         <div className="Stick Appendage Left Leg Color" />
         <div className="Stick Appendage Right Leg Color" />
       </div>
-      
     </div>
   );
 }

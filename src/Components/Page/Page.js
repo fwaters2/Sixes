@@ -9,19 +9,15 @@ class Page extends Component {
     );
     const page = PageInfo[index];
     return (
-      
       <div className="PageContainer">
-        <div className="PageTitle">
-          {page.title}
-        </div>
+        <div className="PageTitle">{page.title}</div>
         <div className="BodyIntro">
-          {page.bodyIntro}
+          
           {page.items.map(x => (
-            <div className="PageItem">{x}</div>
+            <div key={page.items.indexOf(x)} className="PageItem">{x}</div>
           ))}
         </div>
-        </div>
-      
+      </div>
     );
   }
 }

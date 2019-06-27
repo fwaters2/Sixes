@@ -18,9 +18,7 @@ class PreApp extends Component {
     });
   };
   render() {
-    return (
-      this.state.notReady ? <Preloader /> : <App />
-    );
+    return this.state.notReady ? <Preloader /> : <App />;
   }
 }
 export default PreApp;

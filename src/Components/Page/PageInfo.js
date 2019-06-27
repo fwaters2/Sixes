@@ -1,7 +1,6 @@
 import React from "react";
 import Preloader from "../Preloader/Preloader";
 
-
 const PageInfo = [
   {
     title: "Register",
@@ -9,7 +8,7 @@ const PageInfo = [
     items: [
       <iframe
         title="Registration"
-        src="https://docs.google.com/forms/d/e/1FAIpQLSfdTZQFYWiQmugd51Tdj-5ZVvmMO0CHlT_Avpn2SD5AwbOP3w/viewform?embedded=true"
+        src="https://docs.google.com/forms/d/e/1FAIpQLScVUXqeqyk-i1gvI2YbP9JaPrLOvJHgU3b61qusTrCqM0dLdA/viewform?embedded=true"
         width="95%"
         height="450px"
       >
@@ -18,29 +17,49 @@ const PageInfo = [
     ]
   },
   {
-    title: "Facebook Feed",
-    bodyIntro: "Most Recent News!",
+    title: "Information",
+    bodyIntro: "Basic Info",
     items: [
-      
-    <div
-      className="fb-page"
-      data-href="https://www.facebook.com/pohangultimate/"
-      data-tabs="timeline"
-      data-width=""
-      data-height=""
-      data-small-header="false"
-      data-adapt-container-width="true"
-      data-hide-cover="false"
-      data-show-facepile="true"
-    >
-      <blockquote
-        cite="https://www.facebook.com/pohangultimate/"
-        className="fb-xfbml-parse-ignore"
-      >
-        <a href="https://www.facebook.com/pohangultimate/">SIX on the BEACH</a>
-      </blockquote>
-    </div>
-    
+      <div>
+        <div className="Itemheader">What</div>
+        <div>
+          <div>Saturday August 25th (11am - 8pm)</div>
+          <div>Sunday August 26th (10am - 4pm)</div>
+          <div>2018.8.25.토 (오전11시 - 오후8시)</div>
+          <div>2018.8.26.일 (오전10시 - 오후4시)</div>
+        </div>
+      </div>,
+      <div>
+        <div className="Itemheader">What</div>
+        <div>
+          <div>
+            INCLUDED: Minimum 6 games of Beach Ultimate! Reversible Jerseys &
+            Prizes from sponsors Double Happiness and Five Ultimate!
+          </div><br/>
+          <div>
+            Breakfast both days (Bananas, Carbs and SURPRISES!!!) 포함 내역:
+            6경기 이상 비치얼티밋 리버서블 저지 & 더블해피니스와 파이브
+            얼티밋에서 후원하는 상품들 2일간 아침과 간식(바나나, 탄수화물 식품
+            그리고 서프라이즈 간식!!!!!)
+          </div><br/>
+          <div>
+            A night you wish you remembered at Tilt Bar N Grill. A visit to the
+            biggest little city and the most magical time you have had in
+            months!!!! 틸트 바 앤 그릴에서 당신이 추억하는 밤!!! 가장 크지만
+            작은 도시 포항 방문으로 여러분 모두들이 오랫동안 간직할 멋진 추억을
+            만들 수 있을 거예요~~
+          </div>
+        </div>
+      </div>,
+      <div>
+        <div style={{fontWeight:"bold"}}>Where</div>
+        <iframe
+        title="Tourney Map"
+        src="https://www.google.com/maps/d/embed?mid=1cx2JGJR0CIcW-wtxZ8lm1NXJadgh8v3Z"
+        width="95%"
+        height="350px"
+      />
+      </div>
     ] //embed googledoc see googlemap
   },
   {
@@ -57,9 +76,15 @@ const PageInfo = [
   },
   {
     title: "Schedule",
-    bodyIntro: "Most recent updates at the top",
+    bodyIntro: "Basic Schedule",
     items: [
-      "Schedule Undetermined at this time! Check 'Updates' for most recent info"
+      <div>
+          <div>Saturday August 25th (11am - 8pm)</div>
+          <div>Sunday August 26th (10am - 4pm)</div>
+          <div>2018.8.25.토 (오전11시 - 오후8시)</div>
+          <div>2018.8.26.일 (오전10시 - 오후4시)</div>
+        </div>,
+      "Exact schedule Undetermined at this time! Check 'Updates' for most recent info"
     ]
   },
   {
@@ -67,7 +92,7 @@ const PageInfo = [
     bodyIntro: "Most recent updates at the top",
     items: [
       <div>
-        <div>Getting to Korea</div>
+        <div className="Itemheader">Getting to Korea</div>
         <div>
           International Airports: Gimhae (Busan), Incheon (Seoul), Daegu
           International Airport
@@ -75,12 +100,12 @@ const PageInfo = [
         <a href="https://www.skyscanner.com">Check flights on Skyscanner!</a>
       </div>,
       <div>
-        <div>Getting to Pohang</div>
+        <div className="Itemheader">Getting to Pohang</div>
         <div>Options: High Speed Rail, Bus, or possibly Taxi</div>
         <a href="https://www.rome2rio.com">Check all options here!</a>
       </div>,
       <div>
-        <div>Getting around Pohang</div>
+        <div className="Itemheader">Getting around Pohang</div>
         <div>
           You will want to Taxi from the bus station, (no Ubers in Pohang). Show
           them your destination on your phone or tell them "Yong-Il Day Bee-Chi"
@@ -97,7 +122,7 @@ const PageInfo = [
     bodyIntro: "Hotels Near the field",
     items: [
       <div>
-        <div>Lily Motel</div>
+        <div className="Itemheader">Lily Motel</div>
         <iframe
           title="Lily Motel"
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1356.210361296646!2d129.37744458354456!3d36.0537343422342!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x5e78d82ac1dc4abd!2z7Y-s7ZWt66a066as66qo7YWU!5e0!3m2!1sen!2stw!4v1561348162367!5m2!1sen!2stw"
@@ -107,7 +132,7 @@ const PageInfo = [
         />
       </div>,
       <div>
-        <div>Pose Motel</div>
+        <div className="Itemheader">Pose Motel</div>
         <iframe
           title="Pose Motel"
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1356.210361296646!2d129.37744458354456!3d36.0537343422342!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb02375461e6e5ced!2z7Y-s7Iqk66qo7YWU!5e0!3m2!1sen!2stw!4v1561348081646!5m2!1sen!2stw"
@@ -116,21 +141,6 @@ const PageInfo = [
           frameborder="0"
         />
       </div>
-    ]
-  },
-  {
-    title: "Sponsors",
-    bodyIntro: "2019 Six on the Beach Sponsors",
-    items: [
-      "BULA",
-      "Tilt",
-      "Pohang City",
-      "Double Happiness",
-      "Cartographic Productions",
-      "Five Ultimate",
-      "DiscRaft",
-      "ROKU",
-      "Busan Ultimate"
     ]
   },
   {

@@ -1,19 +1,20 @@
 .PageContainer{
     color: black;
-    background-color:white;
+    background-color:salmon;
     border: 2px solid rgb(229,5,3);
-    height:100%;
+   min-height: calc(84vh - 4px);
+    
 }
 .PageTitle{
     font-size: 1.5em;
     font-weight: bold;
-    background-color:rgba(255, 247, 1, 0.5);
+    background-color:rgb(253, 247, 69);
     padding: 5px;
 }
 .BodyIntro{
-    background-color:salmon;
+    
     padding:10px;
-   height:100%;
+  
 }
 .PageItem{
     background-color:rgba(255,255,255,0.4);

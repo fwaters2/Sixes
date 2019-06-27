@@ -3,7 +3,7 @@
     width:50%;
     top:9vh;
     left:0;
-    position: absolute;
+    position: fixed;
     z-index: 2;
     background: #ff3633;
     display:flex;

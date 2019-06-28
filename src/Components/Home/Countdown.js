@@ -6,10 +6,10 @@ class Countdown extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      regDate: "July 4, 2019 03:24:00",
+      regDate: "July 4, 2019 13:24:00",
       days: 0,
       hoursTens: 0,
-      hours: 0,
+      hour: 0,
       minutesTens: 0,
       minutes: 0,
       secondsTens: 0,
@@ -28,14 +28,20 @@ class Countdown extends Component {
   tick() {
     const regSecs = Date.parse(new Date(this.state.regDate));
     const time = (regSecs - Date.parse(new Date()));
+
     const seconds = time/1000
     const secondsOnes = seconds%10
     const secondsTens = Math.floor(seconds / 10)%6
-    const minutesOnes = Math.floor(seconds / 60)%10
-    const minutesTens = Math.floor(seconds / 60 /10)%6
-    const hoursOnes = (Math.floor(seconds /60 /60 ) %24) % 10
-    const hoursTens = (Math.floor(seconds / 60 / 60 ) %24) %3
-    const days = Math.floor(seconds / 60 / 60 / 24)
+
+    const minutes = Math.floor(seconds / 60)
+    const minutesOnes = minutes%10
+    const minutesTens = Math.floor(minutes / 10)%6
+
+    const hours = Math.floor(minutes / 60)
+    const hoursOnes = (hours % 24) % 10
+    const hoursTens = Math.floor((hours % 24) /10 ) %3
+    const days = Math.floor(hours / 24)
+    
     this.setState({
       days: days,
       hoursTens: hoursTens,

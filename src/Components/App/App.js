@@ -43,9 +43,7 @@ function App() {
       <div className="App-Body">
         <Router appState={appState} />
       </div>
-      <div className="App-Footer">
-        <Footer />
-      </div>
+     
     </div>
   );
 }

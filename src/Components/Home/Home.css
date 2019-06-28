@@ -6,25 +6,27 @@
 .Home-Background {
   position: fixed;
   min-width: 100vw;
-  height: 84vh;
+  height: 91vh;
   z-index: -2;
+  background-color:lightgreen;
 }
 .CartLogo img{
   position: fixed;
-  width:10vw;
-  right: 2vw;
-  bottom: 9vh; 
+  width:20vw;
+  right: 1vw;
+  bottom: 1vh; 
 }
 .Home img {
   position: fixed;
+  z-index: 2;
   animation: logo-popin-out 3s forwards;
 }
 .position {
   position: fixed;
-  top: 70%;
-  width: 50%;
-  left: 25%;
-  height: 60px;
+  bottom: 30vh;
+  width: 50vw;
+  left: 25vw;
+  padding: 10px;
 }
 .Countdown {
   display: fixed;

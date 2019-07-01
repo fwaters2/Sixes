@@ -11,9 +11,7 @@ const PageInfo = [
         src="https://docs.google.com/forms/d/e/1FAIpQLScVUXqeqyk-i1gvI2YbP9JaPrLOvJHgU3b61qusTrCqM0dLdA/viewform?embedded=true"
         width="95%"
         height="450px"
-      >
-        <Preloader />{" "}
-      </iframe>
+      />
     ]
   },
   {
@@ -21,7 +19,7 @@ const PageInfo = [
     bodyIntro: "Basic Info",
     items: [
       <div>
-        <div className="Itemheader">What</div>
+        <div className="Itemheader">When</div>
         <div>
           <div>Saturday August 25th (11am - 8pm)</div>
           <div>Sunday August 26th (10am - 4pm)</div>
@@ -60,7 +58,7 @@ const PageInfo = [
         height="350px"
       />
       </div>
-    ] //embed googledoc see googlemap
+    ]
   },
   {
     title: "Tourney Map",

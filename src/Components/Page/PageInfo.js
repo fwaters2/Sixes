@@ -8,7 +8,7 @@ const PageInfo = [
     items: [
       <iframe
         title="Registration"
-        src="https://docs.google.com/forms/d/e/1FAIpQLScVUXqeqyk-i1gvI2YbP9JaPrLOvJHgU3b61qusTrCqM0dLdA/viewform?embedded=true"
+        src="https://docs.google.com/forms/d/e/1FAIpQLSe3NRKimVGgEZPGBxCyTy1KPU0tBhNnMOXd_FHAc1c2RbLtAQ/viewform?embedded=true"
         width="95%"
         height="450px"
       />

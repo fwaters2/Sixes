@@ -36,11 +36,11 @@ class Home extends Component {
         <div className="Home">
           <img src={logo} alt="Sixes Logo" />
 
-          <button id="Register" className="Countdown position" onClick={this.handleClick}>
+          <button id="Register" className="Countdown position dev-state" onClick={this.handleClick}>
             <label id="Register">Registration opens:</label>
             <Countdown id="Register" />
           </button>
-          <button className="position dev-state" disabled>Register Now!</button>  
+          <button className="position" id="Register" onClick={this.handleClick}>Register Now!</button>  
             
         </div>
         

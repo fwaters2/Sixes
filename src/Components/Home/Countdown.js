@@ -6,7 +6,7 @@ class Countdown extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      regDate: "July 4, 2019 13:24:00",
+      regDate: "July 4, 2019 23:59:59",
       days: 0,
       hoursTens: 0,
       hour: 0,

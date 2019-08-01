@@ -1,0 +1,38 @@
+[
+    {
+        "page": "schedule",
+        "order":1,
+        "postTitle": "When",
+        "text":"Saturday August 25th (11am - 8pm)\nSunday August 26th (10am - 4pm)\n2018.8.25.토 (오전11시 - 오후8시)\n2018.8.26.일 (오전10시 - 오후4시)"
+    },
+    {
+        "page": "information",
+        "order":1,
+        "postTitle": "What",
+        "text":"INCLUDED: Minimum 6 games of Beach Ultimate! Reversible Jerseys & Prizes from sponsors Double Happiness and Five Ultimate!\nBreakfast both days (Bananas, Carbs and SURPRISES!!!) 포함 내역:6경기 이상 비치얼티밋 리버서블 저지 & 더블해피니스와 파이브 얼티밋에서 후원하는 상품들 2일간 아침과 간식(바나나, 탄수화물 식품 그리고 서프라이즈 간식!!!!!)\nA night you wish you remembered at Tilt Bar N Grill. A visit to the biggest little city and the most magical time you have had in months!!!! 틸트 바 앤 그릴에서 당신이 추억하는 밤!!! 가장 크지만 작은 도시 포항 방문으로 여러분 모두들이 오랫동안 간직할 멋진 추억을 만들 수 있을 거예요~~"
+    },
+    {
+        "page": "transport",
+        "order":1,
+        "postTitle": "Getting to Korea",
+        "text":"International Airports: Gimhae (Busan), Incheon (Seoul), Daegu International Airport\nCheck flights on Skyscanner!"
+    }, 
+    {
+        "page": "transport",
+        "order":2,
+        "postTitle": "Getting to Pohang",
+        "text":"Options: High Speed Rail, Bus, or possibly Taxi\nCheck https://www.rome2rio.com for more options!"
+    }, 
+    {
+        "page": "transport",
+        "order":3,
+        "postTitle": "Getting around Pohang",
+        "text":"You will want to Taxi from the bus station, (no Ubers in Pohang). Show them your destination on your phone or tell them Yong-Il Day Bee-Chi if you're working on your Korean :)\nFields, Hotels, and the party venue are VERY close. So you will be able to travel on foot to get from place to place."
+    }, 
+    {
+      "page": "contactInfo",
+      "order":1,
+      "postTitle": "Sixes is being put together by the following",
+      "text": "Contact us via our fb page! https://www.facebook.com/pohangultimate/"
+    }
+  ]

@@ -1,5 +1,6 @@
 import React from "react";
-import Preloader from "../Preloader/Preloader";
+import '../../Assets/Images/Sponsors/Tilt.png'
+const tiltLogo = require('../../Assets/Images/Sponsors/Tilt.png')
 
 const PageInfo = [
   {
@@ -9,9 +10,15 @@ const PageInfo = [
       <div>
         <div className="Itemheader">Registration is currently FULL</div>
         <div>
-          <div>Please <a href="https://www.facebook.com/pohangultimate/"><strong>CONTACT US</strong></a> regarding late registration</div>
+          <div>
+            Please{" "}
+            <a href="https://www.facebook.com/pohangultimate/">
+              <strong>CONTACT US</strong>
+            </a>{" "}
+            regarding late registration
+          </div>
         </div>
-      </div>,
+      </div>
     ]
   },
   {
@@ -21,10 +28,10 @@ const PageInfo = [
       <div>
         <div className="Itemheader">When</div>
         <div>
-          <div>Saturday August 25th (11am - 8pm)</div>
-          <div>Sunday August 26th (10am - 4pm)</div>
-          <div>2018.8.25.토 (오전11시 - 오후8시)</div>
-          <div>2018.8.26.일 (오전10시 - 오후4시)</div>
+        <div>Saturday August 24th (11am - 8pm)</div>
+        <div>Sunday August 25th (10am - 4:30pm)</div>
+        <div>2018.8.24.토 (오전11시 - 오후8시)</div>
+        <div>2018.8.25.일 (오전10시 - 오후4시30분)</div>
         </div>
       </div>,
       <div>
@@ -33,13 +40,15 @@ const PageInfo = [
           <div>
             INCLUDED: Minimum 6 games of Beach Ultimate! Reversible Jerseys &
             Prizes from sponsors Double Happiness and Five Ultimate!
-          </div><br/>
+          </div>
+          <br />
           <div>
             Breakfast both days (Bananas, Carbs and SURPRISES!!!) 포함 내역:
             6경기 이상 비치얼티밋 리버서블 저지 & 더블해피니스와 파이브
             얼티밋에서 후원하는 상품들 2일간 아침과 간식(바나나, 탄수화물 식품
             그리고 서프라이즈 간식!!!!!)
-          </div><br/>
+          </div>
+          <br />
           <div>
             A night you wish you remembered at Tilt Bar N Grill. A visit to the
             biggest little city and the most magical time you have had in
@@ -50,13 +59,13 @@ const PageInfo = [
         </div>
       </div>,
       <div>
-        <div style={{fontWeight:"bold"}}>Where</div>
+        <div style={{ fontWeight: "bold" }}>Where</div>
         <iframe
-        title="Tourney Map"
-        src="https://www.google.com/maps/d/embed?mid=1cx2JGJR0CIcW-wtxZ8lm1NXJadgh8v3Z"
-        width="95%"
-        height="350px"
-      />
+          title="Tourney Map"
+          src="https://www.google.com/maps/d/embed?mid=1cx2JGJR0CIcW-wtxZ8lm1NXJadgh8v3Z"
+          width="95%"
+          height="350px"
+        />
       </div>
     ]
   },
@@ -77,11 +86,11 @@ const PageInfo = [
     bodyIntro: "Basic Schedule",
     items: [
       <div>
-          <div>Saturday August 25th (11am - 8pm)</div>
-          <div>Sunday August 26th (10am - 4pm)</div>
-          <div>2018.8.25.토 (오전11시 - 오후8시)</div>
-          <div>2018.8.26.일 (오전10시 - 오후4시)</div>
-        </div>,
+        <div>Saturday August 24th (11am - 8pm)</div>
+        <div>Sunday August 25th (10am - 4:30pm)</div>
+        <div>2018.8.24.토 (오전11시 - 오후8시)</div>
+        <div>2018.8.25.일 (오전10시 - 오후4시30분)</div>
+      </div>,
       "Exact schedule Undetermined at this time! Check 'Updates' for most recent info"
     ]
   },
@@ -92,25 +101,19 @@ const PageInfo = [
       <div>
         <div className="Itemheader">Getting to Korea</div>
         <div>
-          International Airports: Gimhae (Busan), Incheon (Seoul), Daegu
-          International Airport
+        Pohang Airport (COME ON BRO!!!)
         </div>
-        <a href="https://www.skyscanner.com">Check flights on Skyscanner!</a>
+        
       </div>,
       <div>
         <div className="Itemheader">Getting to Pohang</div>
-        <div>Options: High Speed Rail, Bus, or possibly Taxi</div>
-        <a href="https://www.rome2rio.com">Check all options here!</a>
+        <div>Options: KTX, Bus, Taxi, Drive, Bike, Swim, Walk, or SCOOT!</div>
+       
       </div>,
       <div>
         <div className="Itemheader">Getting around Pohang</div>
         <div>
-          You will want to Taxi from the bus station, (no Ubers in Pohang). Show
-          them your destination on your phone or tell them "Yong-Il Day Bee-Chi"
-          if you're working on your Korean :)
-          <br />
-          Fields, Hotels, and the party venue are VERY close. So you will be
-          able to travel on foot to get from place to place.
+        From the station (KTX or Bus) a taxi is the quickest way to get to the beach. Also won’t be too expensive, especially with a few friends. Say: 영일대해수욕장 (Yong-il Day Bee-Chi). Another option that would cost less, but take more time, is the city BUS (Blue Bus: 101, 105, 130, 131, 200, 700 Green Bus: 176, 600).
         </div>
       </div>
     ]
@@ -142,11 +145,21 @@ const PageInfo = [
     ]
   },
   {
+    title: "PARTY",
+    bodyIntro:"",
+    items: [
+      <img src={tiltLogo} alt="tilt logo" />,
+      <div>Checkout their <a href="https://www.facebook.com/tiltbarngrill/">Facebook Page</a> </div>
+    ]
+  },
+  {
     title: "Contact Info",
     bodyIntro: "Sixes is being put together by the following",
     items: [
       "Contact us via our fb page!",
-      <a href="https://www.facebook.com/pohangultimate/">Message us on Facebook</a>
+      <a href="https://www.facebook.com/pohangultimate/">
+        Message us on Facebook
+      </a>
     ]
   }
 ];

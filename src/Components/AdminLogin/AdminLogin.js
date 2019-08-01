@@ -1,12 +1,13 @@
 import React, { Component } from "react";
 import "./AdminLogin.css";
-const adminInfo = { userName: "Oliver", password: "sixes" };
+import firebase from '../../Utils/Firebase'
+
 
 class AdminLogin extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      userName: "",
+      email: "",
       password: ""
     };
   }
@@ -14,28 +15,22 @@ class AdminLogin extends Component {
     this.setState({
       [e.target.id]: e.target.value
     });
+    console.log(this.state.email)
   };
   handleLogin =() =>{
     this.props.appState.adminToggle()
     this.props.appState.toggleLogin()
     this.props.appState.handleChange("adminConsole")
   }
-  authentification = () => {
-      var userGood = false
-      var passGood = false
-      this.state.userName === adminInfo.userName?
-        userGood=true : userGood = false
-            
-    this.state.password ===adminInfo.password?
-    passGood=true :passGood = false
-    userGood && passGood ?  this.handleLogin() : alert("Nope")
-           
-  }
+
   handleSubmit = (e) =>{
       e.preventDefault()
-      this.authentification();
+      firebase.auth().signInWithEmailAndPassword(this.state.email,this.state.password).then(
+        console.log("successful")
+      ).catch(console.log("some kind of error"))
+      
       this.setState({
-          userName:"",
+          email:"",
           password:""
       })
 
@@ -45,10 +40,10 @@ class AdminLogin extends Component {
       <div className="AdminLogin">
         <form onSubmit={this.handleSubmit}>
           <input
-            id="userName"
-            type="name"
-            value={this.state.userName}
-            placeholder="UserName"
+            id="email"
+            type="email"
+            value={this.state.email}
+            placeholder="email"
             onChange={this.handleChange}
           />
           <input
@@ -58,6 +53,7 @@ class AdminLogin extends Component {
             placeholder="Password"
             onChange={this.handleChange}
           />
+          {console.log(firebase.auth().currentUser?true:false)}
           <button onClick={this.handleSubmit}>Submit</button>
         </form>
       </div>

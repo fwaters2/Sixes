@@ -5,6 +5,7 @@ import homeIcon from "../../Assets/Images/minibanner.png";
 import loginIcon from "../../Assets/Images/signin.png";
 import adminIcon from "../../Assets/Images/adminIcon.png";
 import DesktopMenu from "./DesktopMenu";
+import firebase from '../../Utils/Firebase'
 
 class Header extends Component {
   goHome = () => {
@@ -32,14 +33,18 @@ class Header extends Component {
           <DesktopMenu appState={this.props.appState}/>
         </div>
         <div className="icons">
-          {this.props.appState.adminLoggedIn ? (
-            <img
-              alt="AdminIcon"
-              src={adminIcon}
-              onClick={this.handleAdminClick}
-            />
+          {this.props.appState.user ? (
+            
+            // <img
+            //   alt="AdminIcon"
+            //   src={adminIcon}
+            //   onClick={this.handleAdminClick}
+            // />
+            <button onClick={()=>firebase.auth().signOut()}>Logout</button>
+            
           ) : (
             <img alt="profileIcon" src={loginIcon} onClick={this.toggleLogin} />
+            
           )}
         </div>
       </div>

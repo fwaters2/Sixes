@@ -2,15 +2,20 @@ import React from "react";
 import "./App.css";
 import Header from "../Header/Header";
 import Router from "../Router";
-import Footer from "../Footer/Footer";
 import Dropdown from "../Dropdown/Dropdown";
 import AdminLogin from "../AdminLogin/AdminLogin";
+import firebase from '../../Utils/Firebase'
+import DLFirebase from "./DLFirebase";
 
 function App() {
   const [page, changePage] = React.useState("Home");
   const [drawer, toggleDrawer] = React.useState(false);
   const [adminLogin, togglesLogin] = React.useState(false);
   const [adminLoggedIn, toggleAdmin] = React.useState(false);
+  const [user, updateUser ] = React.useState("")
+  const [userInfo, updateUserInfo ] =React.useState("")
+  const [fireDBinfo, updatefireDBinfo ] = React.useState([])
+ 
 
   function handleChange(newPage) {
     changePage(newPage);
@@ -31,11 +36,15 @@ function App() {
     adminLogin: adminLogin,
     toggleLogin: toggleLogin,
     adminLoggedIn: adminLoggedIn,
-    adminToggle: adminToggle
+    adminToggle: adminToggle,
+    user:user,
+    userInfo:userInfo
   };
   return (
     <div className="App">
       <div className="Header">
+<DLFirebase fireDBinfo={fireDBinfo} updatefireDBinfo={updatefireDBinfo} />
+        {console.log(fireDBinfo)}
         <Header appState={appState} />
       </div>
       {drawer ? <Dropdown appState={appState} /> : <div />}
@@ -43,7 +52,6 @@ function App() {
       <div className="App-Body">
         <Router appState={appState} />
       </div>
-     
     </div>
   );
 }

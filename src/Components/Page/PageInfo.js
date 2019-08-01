@@ -101,7 +101,7 @@ const PageInfo = [
       <div>
         <div className="Itemheader">Getting to Korea</div>
         <div>
-        Pohang Airport (COME ON BRO!!!)
+        International Airports: Gimhae (Busan), Incheon (Seoul), Daegu International Airport or even POHANG's airport. Check flights on Skyscanner! 
         </div>
         
       </div>,

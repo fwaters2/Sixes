@@ -30,39 +30,24 @@ const PageInfo = [
         <div>
         <div>Saturday August 24th (11am - 8pm)</div>
         <div>Sunday August 25th (10am - 4:30pm)</div>
-        <div>2018.8.24.토 (오전11시 - 오후8시)</div>
-        <div>2018.8.25.일 (오전10시 - 오후4시30분)</div>
+        
         </div>
       </div>,
       <div>
         <div className="Itemheader">What</div>
         <div>
           <div>
-            INCLUDED: Minimum 6 games of Beach Ultimate! Reversible Jerseys &
-            Prizes from sponsors Double Happiness and Five Ultimate!
+          Six on the Beach is a mixed gendered beach ultimate hat tournament in Pohang, South Korea. The event has been held on Bukbu Beach (Yeongildae Beach) since 2013. The event is used to celebrate the ultimate community in Korea and the city of Pohang. The support of local businesses like Tilt Bar N Grill have helped to make this a favorite tournament for many in Korea. 
+
           </div>
-          <br />
-          <div>
-            Breakfast both days (Bananas, Carbs and SURPRISES!!!) 포함 내역:
-            6경기 이상 비치얼티밋 리버서블 저지 & 더블해피니스와 파이브
-            얼티밋에서 후원하는 상품들 2일간 아침과 간식(바나나, 탄수화물 식품
-            그리고 서프라이즈 간식!!!!!)
-          </div>
-          <br />
-          <div>
-            A night you wish you remembered at Tilt Bar N Grill. A visit to the
-            biggest little city and the most magical time you have had in
-            months!!!! 틸트 바 앤 그릴에서 당신이 추억하는 밤!!! 가장 크지만
-            작은 도시 포항 방문으로 여러분 모두들이 오랫동안 간직할 멋진 추억을
-            만들 수 있을 거예요~~
-          </div>
+          
         </div>
       </div>,
       <div>
         <div style={{ fontWeight: "bold" }}>Where</div>
         <iframe
           title="Tourney Map"
-          src="https://www.google.com/maps/d/embed?mid=1cx2JGJR0CIcW-wtxZ8lm1NXJadgh8v3Z"
+          src="https://www.google.com/maps/d/embed?mid=1hqbxu1z1XiERMWlSSxyTC6TSH4w"
           width="95%"
           height="350px"
         />
@@ -75,7 +60,7 @@ const PageInfo = [
     items: [
       <iframe
         title="Tourney Map"
-        src="https://www.google.com/maps/d/embed?mid=1cx2JGJR0CIcW-wtxZ8lm1NXJadgh8v3Z"
+        src="https://www.google.com/maps/d/embed?mid=1hqbxu1z1XiERMWlSSxyTC6TSH4w"
         width="95%"
         height="350px"
       />
@@ -124,7 +109,7 @@ const PageInfo = [
     items: [
       <div>
         <div className="Itemheader">Lily Motel</div>
-        <div>We are proud to continue or relationship with Lily Guesthouse and Lily Motel as tournament sponsors! They are located directly across the street from tournament central and our playing fields, very convenient! </div>
+        <div>We are proud to continue our relationship with Lily Guesthouse and Lily Motel as tournament sponsors! They are located directly across the street from tournament central and our playing fields, very convenient! </div>
         <div>It’s a short beautiful walk down the beach to the party location TILT. 
 Prices range depending on room size for the hotel (# of people) and the guesthouse has various sleeping arrangements. 
 Must speak Korean to reserve, message if we could be of help. <a href="http://www.lilyguesthouse.co.kr/">(http://www.lilyguesthouse.co.kr/)</a> </div>

@@ -6,12 +6,12 @@ const PageInfo = [
     title: "Register",
     bodyIntro: "2019 Registration",
     items: [
-      <iframe
-        title="Registration"
-        src="https://docs.google.com/forms/d/e/1FAIpQLSe3NRKimVGgEZPGBxCyTy1KPU0tBhNnMOXd_FHAc1c2RbLtAQ/viewform?embedded=true"
-        width="95%"
-        height="450px"
-      />
+      <div>
+        <div className="Itemheader">Registration is currently FULL</div>
+        <div>
+          <div>Please <a href="https://www.facebook.com/pohangultimate/"><strong>CONTACT US</strong></a> regarding late registration</div>
+        </div>
+      </div>,
     ]
   },
   {
@@ -145,8 +145,8 @@ const PageInfo = [
     title: "Contact Info",
     bodyIntro: "Sixes is being put together by the following",
     items: [
-      "Tourney Director: Oliver ",
-      <a href="https://www.facebook.com/ovotteler">Find Him on Facebook</a>
+      "Contact us via our fb page!",
+      <a href="https://www.facebook.com/pohangultimate/">Message us on Facebook</a>
     ]
   }
 ];

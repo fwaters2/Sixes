@@ -119,11 +119,15 @@ const PageInfo = [
     ]
   },
   {
-    title: "Accomodations",
+    title: "ACCOMMODATIONS",
     bodyIntro: "Hotels Near the field",
     items: [
       <div>
         <div className="Itemheader">Lily Motel</div>
+        <div>We are proud to continue or relationship with Lily Guesthouse and Lily Motel as tournament sponsors! They are located directly across the street from tournament central and our playing fields, very convenient! </div>
+        <div>It’s a short beautiful walk down the beach to the party location TILT. 
+Prices range depending on room size for the hotel (# of people) and the guesthouse has various sleeping arrangements. 
+Must speak Korean to reserve, message if we could be of help. <a href="http://www.lilyguesthouse.co.kr/">(http://www.lilyguesthouse.co.kr/)</a> </div>
         <iframe
           title="Lily Motel"
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1356.210361296646!2d129.37744458354456!3d36.0537343422342!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x5e78d82ac1dc4abd!2z7Y-s7ZWt66a066as66qo7YWU!5e0!3m2!1sen!2stw!4v1561348162367!5m2!1sen!2stw"
@@ -133,14 +137,8 @@ const PageInfo = [
         />
       </div>,
       <div>
-        <div className="Itemheader">Pose Motel</div>
-        <iframe
-          title="Pose Motel"
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1356.210361296646!2d129.37744458354456!3d36.0537343422342!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb02375461e6e5ced!2z7Y-s7Iqk66qo7YWU!5e0!3m2!1sen!2stw!4v1561348081646!5m2!1sen!2stw"
-          width="95%"
-          height="350"
-          frameBorder="0"
-        />
+        <div className="Itemheader">Other Hotels</div>
+        <div>Additionally there are countless hotels along the beach and in the neighborhood surrounding it. In Korea we don’t usually book accommodation in advance, but walk into motels checking prices after playing for the day. The rooms along the beach range from (70,000 - 120,000) for a night, and can get lower as you go away from the beach, with size/quality being the largest factors. You can fit numerous people into a room, people will be looking for roommates. If you’re unsure about hotels, message us with any concerns.</div>
       </div>
     ]
   },

@@ -9,11 +9,11 @@
   height: 91vh;
   z-index: -2;
 }
-.CartLogo img{
+.CartLogo img {
   position: fixed;
-  width:20vw;
+  width: 20vw;
   right: 1vw;
-  bottom: 1vh; 
+  bottom: 1vh;
 }
 .Home img {
   position: fixed;
@@ -27,40 +27,23 @@
   left: 25vw;
   padding: 10px;
 }
-.Countdown {
-  display: fixed;
-  
-  color: rgb(229, 5, 3);
-  font-weight: bold;
-  font-size: 14pt;
-  background-color: rgba(0, 0, 0, 0.8);
-  border-radius: 20px;
-  z-index: 1;
-}
-.Countdown label {
-  font-size: 14pt;
-  border-bottom: 2px solid white;
-}
 .Home button {
   display: fixed;
   border-radius: 20px;
   font-size: 18pt;
 }
-.dev-state {
-  display: none;
-}
 @keyframes logo-popin-out {
   from {
     top: 30%;
-    left:50%;
+    left: 50%;
     transform: translate(-50%);
-    width: 15vw;   
+    width: 15vw;
   }
   40% {
-      top:50%;
-      left: 50%;
-      width:60vw;
-      transform: translate(-50%, -50%)
+    top: 50%;
+    left: 50%;
+    width: 60vw;
+    transform: translate(-50%, -50%);
   }
   to {
     top: 10%;

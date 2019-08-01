@@ -3,9 +3,8 @@ import "./Header.css";
 import menuIcon from "../../Assets/Images/menu.svg";
 import homeIcon from "../../Assets/Images/minibanner.png";
 import loginIcon from "../../Assets/Images/signin.png";
-import adminIcon from "../../Assets/Images/adminIcon.png";
 import DesktopMenu from "./DesktopMenu";
-import firebase from '../../Utils/Firebase'
+import firebase from "../../Utils/Firebase";
 
 class Header extends Component {
   goHome = () => {
@@ -30,21 +29,13 @@ class Header extends Component {
           <img alt="home" src={homeIcon} onClick={this.goHome} />
         </div>
         <div className="Desktop-Menu">
-          <DesktopMenu appState={this.props.appState}/>
+          <DesktopMenu appState={this.props.appState} />
         </div>
         <div className="icons">
           {this.props.appState.user ? (
-            
-            // <img
-            //   alt="AdminIcon"
-            //   src={adminIcon}
-            //   onClick={this.handleAdminClick}
-            // />
-            <button onClick={()=>firebase.auth().signOut()}>Logout</button>
-            
+            <button onClick={() => firebase.auth().signOut()}>Logout</button>
           ) : (
             <img alt="profileIcon" src={loginIcon} onClick={this.toggleLogin} />
-            
           )}
         </div>
       </div>

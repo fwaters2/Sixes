@@ -1,8 +1,8 @@
 import React, { Component } from "react";
-import "./Dropdown.css";
+import "./Drawer.css";
 import PageInfo from "../Page/PageInfo";
 
-class Dropdown extends Component {
+class Drawer extends Component {
   handleClick = e => {
     this.props.appState.handleChange(e.target.id);
     this.props.appState.handleDrawer();
@@ -26,4 +26,4 @@ class Dropdown extends Component {
     );
   }
 }
-export default Dropdown;
+export default Drawer;

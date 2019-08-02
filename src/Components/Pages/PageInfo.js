@@ -15,7 +15,7 @@ const PageInfo = [
             <a href="https://www.facebook.com/pohangultimate/">
               <strong>CONTACT US</strong>
             </a>{" "}
-            regarding late registration
+            regarding late registration hello
           </div>
         </div>
       </div>

@@ -12,9 +12,10 @@ class Page extends Component {
       <div className="PageContainer">
         <div className="PageTitle">{page.title}</div>
         <div className="BodyIntro">
-          
           {page.items.map(x => (
-            <div key={page.items.indexOf(x)} className="PageItem">{x}</div>
+            <div key={page.items.indexOf(x)} className="PageItem">
+              {x}
+            </div>
           ))}
         </div>
       </div>

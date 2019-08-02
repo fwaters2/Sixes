@@ -4,7 +4,7 @@ const tiltLogo = require('../../Assets/Images/Sponsors/Tilt.png')
 
 const PageInfo = [
   {
-    title: "Register",
+    title: "REGISTER",
     bodyIntro: "2019 Registration",
     items: [
       <div>
@@ -22,7 +22,7 @@ const PageInfo = [
     ]
   },
   {
-    title: "Information",
+    title: "INFO",
     bodyIntro: "Basic Info",
     items: [
       <div>
@@ -55,7 +55,7 @@ const PageInfo = [
     ]
   },
   {
-    title: "Tourney Map",
+    title: "TOURNEY MAP",
     bodyIntro: "Pohang Locations",
     items: [
       <iframe
@@ -67,20 +67,18 @@ const PageInfo = [
     ]
   },
   {
-    title: "Schedule",
+    title: "SCHEDULE",
     bodyIntro: "Basic Schedule",
     items: [
       <div>
         <div>Saturday August 24th (11am - 8pm)</div>
         <div>Sunday August 25th (10am - 4:30pm)</div>
-        <div>2018.8.24.토 (오전11시 - 오후8시)</div>
-        <div>2018.8.25.일 (오전10시 - 오후4시30분)</div>
       </div>,
-      "Exact schedule Undetermined at this time! Check 'Updates' for most recent info"
+      "Exact schedule Undetermined at this time! Check back later!"
     ]
   },
   {
-    title: "Transportation",
+    title: "TRANSPORTATION",
     bodyIntro: "Most recent updates at the top",
     items: [
       <div>
@@ -136,7 +134,7 @@ Must speak Korean to reserve, message if we could be of help. <a href="http://ww
     ]
   },
   {
-    title: "Contact Info",
+    title: "CONTACT INFO",
     bodyIntro: "Sixes is being put together by the following",
     items: [
       "Contact us via our fb page!",

@@ -1,38 +1,36 @@
-.container{
-    height: 91%;
-    width:50%;
-    top:9vh;
-    left:0;
-    position: fixed;
-    z-index: 2;
-    background: #ff3633;
-    display:flex;
-    flex-direction:column;
-    align-items: center;
-    animation: slide-in 1s;
+.container {
+  height: 91%;
+  width: 50%;
+  top: 9vh;
+  left: 0;
+  position: fixed;
+  z-index: 2;
+  background: #ff3633;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  animation: slide-in 1s;
 }
 .item {
-    color:rgb(229,5,3);
-    width:100%;
-    background-color:rgb(255,247,1);
-    padding: 10px 0;
-    margin: 3px 0;
-    border-radius: 15px;
-    
+  color: rgb(229, 5, 3);
+  width: 100%;
+  background-color: rgb(255, 247, 1);
+  padding: 10px 0;
+  margin: 3px 0;
+  border-radius: 15px;
 }
 @keyframes slide-in {
-    from {
-      left: -50%;
-    }
-    to {
-      left: 100;
-    }
+  from {
+    left: -50%;
+  }
+  to {
+    left: 100;
+  }
 }
 .Buttons {
-  
   height: 95%;
   width: 95%;
-  display:flex;
-  flex-direction:column;
+  display: flex;
+  flex-direction: column;
   justify-content: space-between;
 }

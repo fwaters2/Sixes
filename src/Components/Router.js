@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import Home from "./Home/Home";
-import Page from "./Page/Page.js";
+import Page from "./Pages/Page.js";
 import AdminConsole from "./AdminConsole/AdminConsole";
 
 class Router extends Component {

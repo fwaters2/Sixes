@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "./Drawer.css";
-import PageInfo from "../Page/PageInfo";
+import PageInfo from "../Pages/PageInfo";
 
 class Drawer extends Component {
   handleClick = e => {

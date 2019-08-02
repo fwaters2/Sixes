@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import PageInfo from "../Page/PageInfo";
+import PageInfo from "../Pages/PageInfo";
 
 class DesktopMenu extends Component {
   handleClick = e => {

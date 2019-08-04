@@ -32,13 +32,13 @@ export default function NewItem(props) {
           placeholder="order"
           value={values.order}
           onChange={handleChange}
-        />
+        /><br/>
         <input
         name="title"
           placeholder="title"
           value={values.title}
           onChange={handleChange}
-        />
+        /><br/>
         <textarea
         name="content"
           placeholder="content"

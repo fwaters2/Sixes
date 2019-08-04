@@ -15,7 +15,7 @@ const PageInfo = [
             <a href="https://www.facebook.com/pohangultimate/">
               <strong>CONTACT US</strong>
             </a>{" "}
-            regarding late registration hello
+            regarding late registration
           </div>
         </div>
       </div>
@@ -37,10 +37,8 @@ const PageInfo = [
         <div className="Itemheader">What</div>
         <div>
           <div>
-          Six on the Beach is a mixed gendered beach ultimate hat tournament in Pohang, South Korea. The event has been held on Bukbu Beach (Yeongildae Beach) since 2013. The event is used to celebrate the ultimate community in Korea and the city of Pohang. The support of local businesses like Tilt Bar N Grill have helped to make this a favorite tournament for many in Korea. 
-
+          Six on the Beach is a mixed gendered beach ultimate hat tournament in Pohang, South Korea. The event has been held on Bukbu Beach (Yeongildae Beach) since 2013. The event is used to celebrate the ultimate community in Korea and the city of Pohang. The support of local businesses like Tilt Bar N Grill have helped to make this a favorite tournament for many in Korea.
           </div>
-          
         </div>
       </div>,
       <div>
@@ -129,7 +127,7 @@ Must speak Korean to reserve, message if we could be of help. <a href="http://ww
     title: "PARTY",
     bodyIntro:"",
     items: [
-      <img src={tiltLogo} alt="tilt logo" />,
+      <img src={tiltLogo} width="100%" alt="tilt logo" />,
       <div>Checkout their <a href="https://www.facebook.com/tiltbarngrill/">Facebook Page</a> </div>
     ]
   },

@@ -32,7 +32,7 @@ class Header extends Component {
           <DesktopMenu appState={this.props.appState} />
         </div>
         <div className="icons">
-          {this.props.appState.user ? (
+          {this.props.appState.signedIn ? (
             <button onClick={() => firebase.auth().signOut()}>Logout</button>
           ) : (
             <img alt="profileIcon" src={loginIcon} onClick={this.toggleLogin} />

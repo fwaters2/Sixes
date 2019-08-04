@@ -4,8 +4,9 @@ import Header from "../Header/Header";
 import Router from "../Router";
 import Drawer from "../Drawer/Drawer";
 import AdminLogin from "../AdminLogin/AdminLogin";
+import FireData from "../../Utils/FireData";
 
-function App() {
+function App(props) {
   const [page, changePage] = React.useState("Home");
   const [drawer, toggleDrawer] = React.useState(false);
   const [adminLogin, togglesLogin] = React.useState(false);
@@ -34,7 +35,10 @@ function App() {
     adminLoggedIn: adminLoggedIn,
     adminToggle: adminToggle,
     user: user,
-    userInfo: userInfo
+    userInfo: userInfo,
+
+    signedIn: props.signedIn,
+    fireData: props.fireData
   };
   return (
     <div className="App">
